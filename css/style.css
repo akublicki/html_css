@@ -1,12 +1,14 @@
 *{
-    //border: solid 1px black;
+    /*border: solid 1px black;*/
     margin: 0px;
+    background: linen;
 }
+
 
 header{
     width: 100%;
     height: 180px;
-    background: gray;
+    background: lightblue;
 }
 
 header img{
@@ -16,7 +18,7 @@ header img{
     margin-top: 40px;
     margin-left: 50px;
     margin-bottom: 40px;
-    background: yellow;
+    background: lightblue;
 }
 
 header nav{
@@ -25,38 +27,52 @@ header nav{
     margin-top: 40px;
     margin-right: 50px;
     margin-bottom: 40px;
-    background: pink;
+    background: lightblue;
 }
 
 nav ul{
     display: inline-block;
     list-style-type: none;
     padding: 5px;
+    margin-top: 35px;
+    border-radius: 15px;
+    background: cornflowerblue;
+}
+
+li{
+    background: cornflowerblue;
 }
 
 li a{
     text-decoration: none;
+    font-weight: bold;
+    color: azure;
+    background: cornflowerblue;
 }
 
 main{
     float: left;
-    width:70%;;
-    background: red;
+    width:70%;
+    background: linen;
 }
 
 article{
     margin: 20px;
-    background: blanchedalmond;
 }
 
 aside{
     float: right;
+    height: 100%;
     width: 30%;
-    background: greenyellow;
+    background: lightgrey;
 }
 
 footer{
     clear: both;
-    background: blue;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
     text-align: center;
+    border-top: solid 5px lightblue;
 }
