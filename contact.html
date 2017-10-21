@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona 2</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <img src="images/html-css.jpg" alt="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Galeria</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">O mnie</a></li>
+        </ul>
+        <ul>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <form action="" method="">
+        <label>Imię</label> <input name="name" type="text" value="Twoje imię">
+        <label>Hasło</label> <input name="password" type="password" required>
+        <label>E-mail</label> <input name="mail" type="email" placeholder="login@domena.pl">
+        <label>Data</label><input type="date">
+        <label>Plik</label><input type="file">
+        <label>Wiek</label><input type="number" value="18"><br>
+        <input name="button" type="submit" value="Wyślij">
+        <input name="reset" type="reset" value="Wyczyść"><br>
+        <textarea name="" cols="20" rows="3" placeholder="Wpisz tekst"></textarea>
+        <label>Wybierz swoją wyszukiwarkę</label>
+        <input list="browsers" name="browsers">
+        <datalist id="browsers">
+            <option value="Internet Eplorer">Internet Eplorer</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+            <option value="Safari">Safari</option>
+        </datalist>
+        <label>Wybierz Swój ulubiony kolor</label>
+        <select name="kolory" size="" required multiple>
+            <option value="red">Czrwony</option>
+            <option value="blue">Niebieski</option>
+            <option value="green">Zielony</option>
+            <option value="nice" disabled>Ładny</option>s
+            <option value="black">Czarny</option>
+            <option value="white">Biały</option>
+        </select>
+        <select name="kolory" size="" required>
+            <option value="red">Czrwony</option>
+            <option value="blue" selected>Niebieski</option>
+            <option value="green">Zielony</option>
+            <option value="nice" disabled>Ładny</option>s
+            <option value="black">Czarny</option>
+            <option value="white">Biały</option>
+        </select>
+        <label>Wybierz Swoją płeć</label>
+        <input type="radio" name="gender" value="male" checked><label class="radio">Male</label><br>
+        <input type="radio" name="gender" value="female"><label class="radio">Femle</label><br>
+        <input type="radio" name="gender" value="other"><label class="radio">Other</label>
+    </form>
+</main>
+<aside>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aperiam asperiores, at consectetur cupiditate debitis earum, est hic impedit laborum nisi nulla optio ratione sequi soluta tempora tempore totam ut.
+</aside>
+<footer>
+    Footer
+</footer>
+</body>
+</html>
