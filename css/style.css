@@ -1,7 +1,7 @@
 *{
     /*border: solid 1px black;*/
     margin: 0px;
-    background: linen;
+    /*background: linen;*/
 }
 
 
@@ -39,6 +39,20 @@ nav ul{
     background: cornflowerblue;
 }
 
+a:hover{
+    color: red;
+}
+
+.body{
+    display: flex;
+    align-items: stretch;
+}
+
+main article h1::before{
+    content: '+';
+    color: green;
+}
+
 li{
     background: cornflowerblue;
 }
@@ -54,17 +68,47 @@ main{
     float: left;
     width:70%;
     background: linen;
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 3;
+}
+
+main article:first-child h1{
+    color: blue;
+}
+
+main article:nth-child(2){
+    color: gray;
+}
+
+main article:last-child p{
+    font-size: 1.5em;
 }
 
 article{
     margin: 20px;
 }
 
+.article1{
+    align-self: flex-start;
+    flex: 1;
+}
+
+.article2{
+    align-self: center;
+    flex: 3;
+}
+
 aside{
+    flex: 1;
     float: right;
-    height: 100%;
     width: 30%;
     background: lightgrey;
+    display: flex;
+}
+
+aside p{
+    align-self: flex-end;
 }
 
 footer{
@@ -76,3 +120,27 @@ footer{
     text-align: center;
     border-top: solid 5px lightblue;
 }
+
+input[type="submit"]{
+    color: red;
+}
+
+form textarea::placeholder{
+    padding-left: 20px;
+}
+
+label{
+    display: block;
+}
+
+.radio{
+    display: inline-block;
+}
+
+
+input:invalid+label::after{content: "-";}
+input:invalid+label{color: red;}
+input:valid+label::after{content: "+";}
+input:valid+label{color: green;}
+input:required+label::after{content: "*";}
+input:required+label::before{content: "!Pole wymagane: ";}
